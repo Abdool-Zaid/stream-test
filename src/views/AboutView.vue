@@ -5,6 +5,14 @@
     <button @click="loadfunc()" >button</button>
     <audio autoplay controls></audio>
   </div>
+</template>
+<script>
+
+  export default {
+  name: 'about',
+  
+mounted(){
+  this.loadfunc()
 },
 methods:{
   loadfunc(){
