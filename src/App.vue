@@ -7,6 +7,16 @@
 </template>
 
 <style>
+  *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+    display:none
+  }
+  body{
+    background-image: radial-gradient(circle, #664cc5, #ad36b2, #dc1491, #f71069, #ff3e3e);  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +37,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
