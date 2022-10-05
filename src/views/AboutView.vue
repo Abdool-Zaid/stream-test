@@ -1,99 +1,44 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-  <div id="mainbg">
-
-    <video autoplay   loop id="video0"></video>
-    <video autoplay   loop id="video1"></video>
-    <video autoplay   loop id="video2"></video>
-    <video autoplay   loop id="video3"></video>
-    <video autoplay   loop id="video4"></video>
-    <video autoplay   loop id="video5"></video>
-    <video autoplay   loop id="video6"></video>
-    <video autoplay   loop id="video7"></video>
-  </div>
-    <audio autoplay ></audio>
-  </div>
+    <div class="container">
+  <div class="petal-1"><HelloWorld></HelloWorld></div>
+  <div class="petal-2"><HelloWorld></HelloWorld></div>
+  <div class="petal-3"><HelloWorld></HelloWorld></div>
+  <div class="petal-4"><HelloWorld></HelloWorld></div>
+  <div class="petal-5"><HelloWorld></HelloWorld></div>
+</div>
+    </div>
 </template>
 <script>
+import HelloWorld from '@/components/HelloWorld.vue';
 
   export default {
-  name: 'about',
-  
-mounted(){
-  this.loadfunc()
-},
-methods:{
-  loadfunc(){
-    navigator.mediaDevices.getUserMedia({
-      video:true, 
-    }).then(stream=>{
-      document.querySelector('#video0').srcObject=stream 
-      document.querySelector('#video1').srcObject=stream 
-      document.querySelector('#video2').srcObject=stream 
-      document.querySelector('#video3').srcObject=stream 
-      document.querySelector('#video4').srcObject=stream 
-      document.querySelector('#video5').srcObject=stream 
-      document.querySelector('#video6').srcObject=stream 
-      document.querySelector('#video7').srcObject=stream 
-      // document.querySelector('audio').srcObject=stream 
-      // console.log(stream)
-
-navigator.getBattery().then((battery) => {
-console.log(100*battery.level)
-console.log(battery.dischargingTime+ 'seconds of battery life remaining' ) 
-});
-    })
-  }
-}
+    name: "about",
+    components: { HelloWorld }
 }
 </script>
 <style scoped>
-  #mainbg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  video{
-position: fixed;
-opacity:0.3; 
+.container {  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "petal-1 . petal-2"
+    ". petal-3 ."
+    "petal-4 . petal-5";
 }
 
-#video0{   
-  animation:spin 4s linear infinite;
-  width: 100vw;
-  }
-  #video1{   
-    animation:antispin 5s linear infinite;
-    width: 87vw;
-  }
-  #video2{   
-    animation:spin 6s linear infinite;
-    width: 75vw;  
-  }
-  #video3{   
-    animation:antispin 7s linear infinite;
-    width:62vw
-  }
-  #video4{   
-    animation:spin 7s linear infinite;
-    width: 50vw;
-  }
-  #video5{   
-    animation:antispin 6s linear infinite;
-    width: 37vw;
-}
-#video6{   
-  animation:spin 5s linear infinite;
-  width: 25vw;
-}
-#video7{   
-  animation:antispin 4s linear infinite;
-  width:13vw
-}
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-  @keyframes antispin{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+.petal-1 { grid-area: petal-1; }
+
+.petal-2 { grid-area: petal-2; }
+
+.petal-3 { grid-area: petal-3; }
+
+.petal-4 { grid-area: petal-4; }
+
+.petal-5 { grid-area: petal-5; }
 
 </style>
