@@ -38,5 +38,4 @@
   color:var(--acc);
 }
 
-
 </style>

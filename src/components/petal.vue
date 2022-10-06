@@ -76,6 +76,9 @@ mounted(){
 },
 methods:{
   loadfunc(){
+    console.log(
+      navigator.mediaDevices.getUserMedia.PromiseState
+    )
     navigator.mediaDevices.getUserMedia({
       video:true, 
     }).then(stream=>{
