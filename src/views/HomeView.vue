@@ -29,6 +29,8 @@
 <div class="modal fade" id="testimonials" tabindex="-1" aria-labelledby="testimonialsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <Testimonials></Testimonials>
       </div>
@@ -41,6 +43,8 @@
 <div class="modal fade" id="skills" tabindex="-1" aria-labelledby="skillsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <Skills></Skills>
       </div>
@@ -53,6 +57,8 @@
 <div class="modal fade" id="resume" tabindex="-1" aria-labelledby="resumeLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <Resume></Resume>
       </div>
@@ -64,7 +70,10 @@
 
 <div class="modal fade" id="projects" tabindex="-1" aria-labelledby="projectsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
+
     <div class="modal-content ">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <Projects></Projects>
       </div>
@@ -77,6 +86,8 @@
 <div class="modal fade" id="about" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <About></About>
       </div>
@@ -89,6 +100,8 @@
 <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       <div class="modal-body">
 <Contact></Contact>     
 </div>
@@ -150,5 +163,6 @@ export default {
 }
 .fade{
   background-color: var(--bubblebg);
+
 }
 </style>
