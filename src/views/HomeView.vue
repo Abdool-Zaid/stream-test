@@ -145,7 +145,10 @@ export default {
     background-color: var(--glass);
   }
   .modal-content{
-    background-color: var(--glass);
-margin-left: auto;
-  }
+    background-color: var(--mute);
+    border: 0px;
+}
+.fade{
+  background-color: var(--bubblebg);
+}
 </style>

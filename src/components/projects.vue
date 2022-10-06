@@ -42,6 +42,8 @@ export default {
     width: 35vw;
     color: var(--thirty);
     background-color: var(--sixty);
+    box-shadow:  2px 2px 6px #bebebe,
+             -2px -2px 6px var(--acc);
 
 }
 img{

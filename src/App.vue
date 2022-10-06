@@ -15,14 +15,15 @@
 --glass:#ae36b225;
 --sixty: #88888800;
   --bg: #2a51be;
-  --thirty: #98e7ff;
-  --acc: #d6d3d3;
+  --thirty: #006c8d;
+  --acc: #4e0000;
   --ss: 1%;
   --se: 1em;
   --snx: 30vw;
   --height: 80vh;
   --width: 70vw;
   --sny: 40vh;
+  --bubblebg:#cfcbcb;
   --mute: #00000000;
   --cursor:#e600ff;
   }
