@@ -1,40 +1,42 @@
 <template>
   <div class="home">
-        <Petal></Petal>
-        <!-- nav -->
-        <div class="fixedButton navLeft d-flex align-items-center justify-content-between flex-column mb-3">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testimonials" >
-            testimonials</button>
-            
+    <Petal></Petal>
+    <!-- nav -->
+    <div class="fixedButton navLeft d-flex align-items-center justify-content-between flex-column mb-3">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testimonials" >
+        testimonials</button>
+        
             <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#skills" >
               skills</button>
-
-            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#resume" >
-              resume</button>
-            </div>
-            <!-- rightnav -->
-            <div class="fixedButton navRight d-flex align-items-center  justify-content-between flex-column mb-3">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projects" >
-                projects</button>
-                
-                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#about" >
-                  about</button>
-
-                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#contact" >
-                  contact</button>
-                </div>
-                
-<!-- modals -->
+              
+              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#resume" >
+                resume</button>
+              </div>
+              <!-- rightnav -->
+              <div class="fixedButton navRight d-flex align-items-center  justify-content-between flex-column mb-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projects" >
+                  projects</button>
+                  
+                  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#about" >
+                    about</button>
+                    
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#contact" >
+                      contact</button>
+                    </div>
+                    
+                    <!-- modals -->
+                    *
+                    
 
 <div class="modal fade" id="testimonials" tabindex="-1" aria-labelledby="testimonialsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <Testimonials></Testimonials>
       </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
@@ -43,12 +45,12 @@
 <div class="modal fade" id="skills" tabindex="-1" aria-labelledby="skillsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <Skills></Skills>
       </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
@@ -57,12 +59,12 @@
 <div class="modal fade" id="resume" tabindex="-1" aria-labelledby="resumeLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <Resume></Resume>
       </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
@@ -72,12 +74,12 @@
   <div class="modal-dialog modal-dialog-centered ">
 
     <div class="modal-content ">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <Projects></Projects>
       </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
@@ -86,12 +88,12 @@
 <div class="modal fade" id="about" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <About></About>
       </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
@@ -100,19 +102,19 @@
 <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content ">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <home-button></home-button>
 
       <div class="modal-body">
 <Contact></Contact>     
 </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <home-button></home-button>
     </div>
   </div>
 </div>
 
 
-
   </div>
+
 </template>
 
 <script>
@@ -123,6 +125,7 @@ import Resume from "@/components/resume.vue";
 import Projects from "@/components/projects.vue";
 import About from "../components/about.vue";
 import Contact from "@/components/contact.vue";
+import HomeButton from '@/components/homeButton.vue';
 // @ is an alias to /src
 
 export default {
@@ -134,7 +137,8 @@ export default {
     Resume,
     Projects,
     About,
-    Contact
+    Contact,
+    HomeButton
 },
 };
 </script>
