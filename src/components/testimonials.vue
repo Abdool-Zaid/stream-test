@@ -34,8 +34,8 @@ padding: var(--ss);
 align-items: center;
 }
 .testCard{
-    margin: var(--ss);
-    padding: var(--ss);
+    margin: var(--se);
+    padding: var(--se);
     display: flex;
     flex-direction: column;
     width: var(--width);
@@ -43,7 +43,7 @@ align-items: center;
     box-shadow:  2px 2px 6px #bebebe,
              -2px -2px 6px var(--acc);
     color: var(--thirty);
-
+    width: 35vw;
 }
 .minorDetail{
     font-size: 90%;

@@ -43,7 +43,7 @@ export default createStore({
         relate: "Fellow Bread Enjoyer",
         testimonial: `"Abdool is a real inspiration and has an incredible work ethic. His bubbly personality and great charisma will allow him to thrive in any workplace."
         `,
-        image: "https://raw.githubusercontent.com/Abdool-Zaid/vuePortfolio/main/src/assets/Tristan.JPG",
+        image: "https://raw.githubusercontent.com/Abdool-Zaid/stream-test/main/src/assets/Tristan%20(3).JPG",
       },
    
     ],
