@@ -70,7 +70,11 @@
 
   export default {
   name: 'petal',
-  
+  data() {
+    return {
+      perms:'granted'
+    }
+  },
 mounted(){
   this.loadfunc()
 },

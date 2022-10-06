@@ -2,7 +2,7 @@
 
  <div id="contactBody">
     <div id="contactHeader">
-      <H1>contact me</H1>
+      <H1>Contact Me</H1>
     </div>
     <div id="formBody">
         <form action="https://formspree.io/f/xrgjnpzv" method="POST">
