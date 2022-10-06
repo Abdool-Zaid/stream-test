@@ -122,41 +122,49 @@ methods:{
     align-items: center;
   }
   video{
-position: fixed;
-opacity:0.3; 
-border-radius: 50%;
-}
-
-.video0{   
-  animation:spin 4s linear infinite;
-  width: 100%;
+    position: fixed;
+    opacity:0.3; 
+    border-radius: 50%;
   }
-.video1{   
-    animation:antispin 5s linear infinite;
+
+  .video0{   
+    animation:spin 4s ease infinite;
+    transform-origin:center; 
+    width: 100%;
+  }
+  .video1{   
+    animation:antispin 5s ease infinite;
+    transform-origin:center; 
     width: 87%;
   }
   .video2{   
-    animation:spin 6s linear infinite;
+    animation:spin 6s ease infinite;
+    transform-origin:center; 
     width: 75%;  
   }
   .video3{   
-    animation:antispin 7s linear infinite;
+    animation:antispin 7s ease infinite;
+    transform-origin:center; 
     width:62%;
   }
   .video4{   
-    animation:spin 7s linear infinite;
+    animation:spin 7s ease infinite;
+    transform-origin:center; 
     width: 50%;
   }
   .video5{   
-    animation:antispin 6s linear infinite;
+    animation:antispin 6s ease infinite;
+    transform-origin:center; 
     width: 37%;
-}
-.video6{   
-  animation:spin 5s linear infinite;
-  width: 25%;
-}
-.video7{   
-  animation:antispin 4s linear infinite;
+  }
+  .video6{   
+    animation:spin 5s ease infinite;
+    transform-origin:center; 
+    width: 25%;
+  }
+  .video7{   
+  animation:antispin 4s ease infinite;
+  transform-origin:center; 
   width:13%;
 }
 .container {  display: grid;
@@ -165,11 +173,12 @@ border-radius: 50%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
+  animation:spin 2s ease infinite;
   grid-auto-flow: row;
   grid-template-areas:
-    "petal-1 . petal-2"
-    ". petal-3 ."
-    "petal-4 . petal-5";
+  "petal-1 . petal-2"
+  ". petal-3 ."
+  "petal-4 . petal-5";
 }
 
 .petal-1 { grid-area: petal-1; }
@@ -183,6 +192,6 @@ border-radius: 50%;
 .petal-5 { grid-area: petal-5; }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-  @keyframes antispin{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+@keyframes antispin{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 
 </style>
