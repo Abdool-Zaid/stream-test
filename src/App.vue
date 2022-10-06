@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -15,27 +11,32 @@
   ::-webkit-scrollbar {
     display:none
   }
+  :root{
+--glass:#ae36b225;
+--sixty: #88888800;
+  --bg: #2a51be;
+  --thirty: #98e7ff;
+  --acc: #d6d3d3;
+  --ss: 1%;
+  --se: 1em;
+  --snx: 30vw;
+  --height: 80vh;
+  --width: 70vw;
+  --sny: 40vh;
+  --mute: #00000000;
+  --cursor:#e600ff;
+  }
+
   body{
+    overflow: hidden;
     background-image: radial-gradient(circle, #664cc5, #ad36b2, #dc1491, #f71069, #ff3e3e);  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color:var(--acc);
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 
 </style>
