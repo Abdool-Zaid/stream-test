@@ -110,6 +110,12 @@ methods:{
 // console.log(100*battery.level)
 // console.log(battery.dischargingTime+ 'seconds of battery life remaining' ) 
 // });
+
+
+// navigator.permissions.query({name: 'camera'})
+//  .then((permissionObj) => {
+//   console.log(permissionObj);
+//  })
     })
   }
 }
@@ -173,7 +179,7 @@ methods:{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  animation:spin 2s ease infinite;
+  animation:spin 4s ease infinite;
   grid-auto-flow: row;
   grid-template-areas:
   "petal-1 . petal-2"
