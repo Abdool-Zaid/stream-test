@@ -26,7 +26,6 @@ export default {
 <style scoped>
 *{
 
-    /* overflow-y: scroll !important; */
 }
 #resumeBody {
   display: flex;
@@ -40,7 +39,6 @@ export default {
   color: var(--thirty);
   width: 35vw;
   background-color: var(--sixty);
-  /* border: 3px solid var(--acc); */
   box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px var(--acc);
 }
 ul {
