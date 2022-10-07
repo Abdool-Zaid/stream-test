@@ -48,9 +48,10 @@ export default {
   padding: var(--ss);
 }
 iframe{
+  margin: var(--se);
   box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px var(--acc);
   border-radius: 20px;
-  width: 100vw;
+  width:94vw;
 aspect-ratio: 1.2;
 }
 iframe::-webkit-scrollbar{
