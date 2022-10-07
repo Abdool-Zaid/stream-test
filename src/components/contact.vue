@@ -5,7 +5,8 @@
       <H1>Contact Me</H1>
     </div>
     <div id="formBody">
-        <form action="https://formspree.io/f/xrgjnpzv" method="POST">
+        <!-- <form action="https://formspree.io/f/xrgjnpzv" method="POST"> -->
+        <form method="POST" data-netlify="true">
             <input type="name" name="name"  required  placeholder="Name"/>
       <input type="email" name="email"  required  placeholder="Email"/>
       <input type="company" name="company"  required  placeholder="Company"/>
