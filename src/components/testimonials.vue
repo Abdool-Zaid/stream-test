@@ -55,4 +55,11 @@ img{
     width: 10vw;
     aspect-ratio: 1 ;
 }
+
+/* media Querries */
+@media only screen and (max-width: 966px) {
+        .testCard{
+          width: 68vw;
+        }  
+    }
 </style>

@@ -52,13 +52,22 @@ width: 100%;
 
 aspect-ratio: 2;
 }
-
+h1{
+  color:var(--acc)
+}
 /* media Querries */
 
-    @media only screen and (max-width: 985px) {
-        #projectbody{
+    @media only screen and (max-width: 966px) {
+        projectbody{
           flex-direction: column;
           align-items: center;
+        }
+        .projectCard{
+            
+          width: 68vw;
+        }  
+        h1{
+          font-size:20px;
         }
     }
     @media only screen and (max-width: 270px) {

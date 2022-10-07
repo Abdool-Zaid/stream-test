@@ -6,8 +6,6 @@
       <h4>{{ job.jobTitle }}</h4>
       <p>{{ job.desc }}</p>
       <p>developed: {{ job.development[0].skill }}</p>
-        <!-- <li>{{job.development[1].skill}}</li> -->
-      
       <p>duration: {{ job.duration }}</p>
       <a :href="job.link" target="blank"></a>
     </div>
@@ -24,14 +22,11 @@ export default {
 };
 </script>
 <style scoped>
-*{
 
-}
 #resumeBody {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 .jobCard {
   margin: var(--se);
@@ -47,6 +42,11 @@ ul {
   justify-content: flex-start;
 }
 /* media Querries */
+@media only screen and (max-width: 966px) {
+        .jobCard{
+          width: 68vw;
+        }  
+    }
 @media only screen and (max-width: 460px) {
   .jobCard {
     font-size: small;

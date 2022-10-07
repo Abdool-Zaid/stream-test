@@ -80,7 +80,7 @@ mounted(){
 },
 methods:{
   loadfunc(){
-    console.log(navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{stream.perms}))
+    // console.log(navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{stream.perms}))
     navigator.mediaDevices.getUserMedia({
       video:true, 
     }).then(stream=>{

@@ -11,11 +11,13 @@
           title="Embedded post"
         ></iframe>
       </div>
-      <a
-        href="src\assets\Abdool_Zaid_Toorabally.pdf"
-        download="CV of Abdool Zaid Toorabally"
-        ><button>Download Resume</button></a
-      >
+      <a href="https://drive.google.com/file/d/1Uom_7kXHY3d-LaCHDs4SabgZFO0prL4U/view?usp=sharing" target="_blank">
+
+        <button @click="downLoadCV()" class="btn btn-primary">
+        view Resume
+      </button>
+    </a>
+      <!-- src="https://drive.google.com/file/d/1Uom_7kXHY3d-LaCHDs4SabgZFO0prL4U/view?usp=sharing" -->
     </div>
   </div>
 </template>
@@ -27,7 +29,11 @@ export default {
       toggleVideo: false,
     };
   },
- 
+  methods: {
+    downLoadCV() {
+      console.log('download');
+    },
+  },
 };
 </script>
 <style scoped>
@@ -47,5 +53,9 @@ video {
   border-radius: 20px;
   width: var(--width);
   height: var(--height);
+}
+.btn-primary{
+  background-color: var(--mute);
+  color:var(--acc)
 }
 </style>

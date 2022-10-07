@@ -25,7 +25,6 @@
                     </div>
                     
                     <!-- modals -->
-                    *
                     
 
 <div class="modal fade" id="testimonials" tabindex="-1" aria-labelledby="testimonialsLabel" aria-hidden="true">

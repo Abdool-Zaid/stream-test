@@ -50,6 +50,11 @@ export default {
 }
 
 /* media Querries */
+@media only screen and (max-width: 966px) {
+        .skillCard{
+          width: 68vw;
+        }  
+    }
 @media only screen and (max-width: 270px) {
   .skillCard {
     font-size: 0.6em;

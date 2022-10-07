@@ -1,6 +1,6 @@
 <template>
   <div class="homeButton">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
       Home
     </button>
   </div>
@@ -12,4 +12,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn-primary{
+  background-color: var(--mute);
+  color:var(--acc);
+}
+</style>
