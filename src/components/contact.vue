@@ -10,7 +10,7 @@
       <input type="email" name="email"  required  placeholder="Email"/>
       <input type="company" name="company"  required  placeholder="Company"/>
       <textarea name="message" required placeholder="Message"></textarea>
-      <textarea name="conatact" required placeholder="Optional contact information"></textarea>
+      <textarea name="conatact"  placeholder="Optional contact information"></textarea>
         <button type="submit"> &#8658;</button>
       <div id="contactButtons">
       <a href="mailto:aztoorabally7447@gmail.com" target="_blank" rel="noopener noreferrer"> &#9993;</a>
@@ -52,11 +52,12 @@ form {
   background-color: var(--sixty);
 }
 form >*{
-    margin: var(--ss);
-    padding: var(--ss);
-    background-color: var(--thirty);
-    border-color: var(--mute);
-    width: 80%;
+  margin: var(--ss);
+  padding: var(--ss);
+  background-color: var(--sixty);
+  border-color: var(--mute);
+  width: 80%;
+  color: var(--acc);
 }
 #contactButtons{
   width: 100%;
@@ -78,7 +79,7 @@ font-size: 1rem;
 form >*:focus{
 outline: var(--mute);
 }
-form :nth-child(1){
+form {
     color: var(--acc);
 }
 form >button{
