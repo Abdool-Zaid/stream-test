@@ -138,6 +138,13 @@ export default createStore({
       },
     ],
     projects:[
+{name:"vue todo",
+description:"an introductory app I made to learn vuetify",
+preView:"src\assets\vue todo.PNG",
+liveLink:"https://azt-todo-v2.netlify.app/",
+githubLink:"https://github.com/Abdool-Zaid/vuetodo",
+  techStack:"Html,CSS,JavaScript",
+},
 {name:"Calculator",
 description:"a simple calculator I made",
 preView:"https://raw.githubusercontent.com/Abdool-Zaid/vuePortfolio/main/src/assets/calc.PNG",
