@@ -29,10 +29,21 @@
   --mute: #00000000;
   --cursor:#e600ff;
   }
-
+html{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left:0;
+  top: 0;
+}
   body{
-    overflow: hidden;
-    background-image: radial-gradient(circle, #664cc5, #ad36b2, #dc1491, #f71069, #ff3e3e);  }
+    overflow-y: hidden;
+    background-image: radial-gradient(circle, #664cc5, #ad36b2, #dc1491, #f71069, #ff3e3e);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100vw 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
