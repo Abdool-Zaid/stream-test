@@ -4,8 +4,7 @@
       <div id="aboutlanding">
         <iframe
           src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6983873663385128961"
-          height="500"
-          width="504"
+          
           frameborder="0"
           allowfullscreen=""
           title="Embedded post"
@@ -48,14 +47,18 @@ export default {
   margin: var(--ss);
   padding: var(--ss);
 }
-video {
+iframe{
   box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px var(--acc);
   border-radius: 20px;
-  width: var(--width);
-  height: var(--height);
+  width: 100vw;
+aspect-ratio: 1.2;
+}
+iframe::-webkit-scrollbar{
+  display:none !important;
 }
 .btn-primary{
   background-color: var(--mute);
   color:var(--acc)
 }
+
 </style>
