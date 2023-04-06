@@ -7,7 +7,7 @@
       <p>{{ job.desc }}</p>
       <p>developed: {{ job.development[0].skill }}</p>
       <p>duration: {{ job.duration }}</p>
-      <a :href="job.link" target="blank"></a>
+      <a :href="job.link" target="blank">{{ job.name }}</a>
     </div>
   </div>
 </template>
