@@ -4,7 +4,6 @@
       <div id="aboutlanding">
         <iframe
           src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6983873663385128961"
-          
           frameborder="0"
           allowfullscreen=""
           title="Embedded post"

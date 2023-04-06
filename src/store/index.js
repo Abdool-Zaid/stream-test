@@ -50,11 +50,12 @@ export default createStore({
     skills: [
       { name: "html", level: 90 },
       { name: "English", level: 90 },
-      { name: "Japanese", level: 12 },
+      { name: "Japanese", level: 18 },
       { name: "CSS", level: 78 },
-      { name: "JavaScript", level: 75 },
+      { name: "JavaScript", level: 82 },
       { name: "MySQL", level: 94 },
-      { name: "vue", level: 78 },
+      { name: "vue", level: 81 },
+      { name: "JAVA", level: 34 },
       { name: "Communication", level: 74 },
       { name: "Time Management", level:85 },
       { name: "Problem-Solving", level:96 },
@@ -135,6 +136,16 @@ export default createStore({
         ],
         duration: "6 months",
         link: "https://www.lifechoices.co.za/",
+      },
+      {
+        name: "Cortical Consulting",
+        jobTitle: "Junior Software Engineer",
+        desc: `Here I had an internship learning JAVA and how it relates in production`,
+        development: [
+          { skill: "JAVA", level: 34, colour: "indigo" },
+        ],
+        duration: "2.5 months",
+        link: "https://www.corticalsystems.com/",
       },
     ],
     projects:[

@@ -5,7 +5,6 @@
       <H1>Contact Me</H1>
     </div>
     <div id="formBody">
-        <!-- <form action="https://formspree.io/f/xrgjnpzv" method="POST"> -->
         <form action="https://formspree.io/f/xrgjnpzv" method="POST">
             <input type="name" name="name"  required  placeholder="Name"/>
       <input type="email" name="email"  required  placeholder="Email"/>

@@ -38,7 +38,6 @@ html{
 }
   body{
     overflow-y: hidden;
-    background-image: radial-gradient(circle, #664cc5, #ad36b2, #dc1491, #f71069, #ff3e3e);
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
