@@ -56,6 +56,7 @@ export default createStore({
       { name: "MySQL", level: 94 },
       { name: "vue", level: 81 },
       { name: "JAVA", level: 34 },
+      { name: "linux", level: 34 },
       { name: "Communication", level: 74 },
       { name: "Time Management", level:85 },
       { name: "Problem-Solving", level:96 },
