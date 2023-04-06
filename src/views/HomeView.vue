@@ -3,24 +3,24 @@
     <Petal></Petal>
     <!-- nav -->
     <div class="fixedButton navLeft d-flex align-items-center justify-content-between flex-column mb-3">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testimonials" >
+      <button type="button" class="btn  " data-bs-toggle="modal" data-bs-target="#testimonials" >
         testimonials</button>
         
-            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#skills" >
+            <button type="button" class="btn   " data-bs-toggle="modal" data-bs-target="#skills" >
               skills</button>
               
-              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#resume" >
+              <button type="button" class="btn   " data-bs-toggle="modal" data-bs-target="#resume" >
                 resume</button>
               </div>
               <!-- rightnav -->
               <div class="fixedButton navRight d-flex align-items-center  justify-content-between flex-column mb-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projects" >
+                <button type="button" class="btn  " data-bs-toggle="modal" data-bs-target="#projects" >
                   projects</button>
                   
-                  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#about" >
+                  <button type="button" class="btn   " data-bs-toggle="modal" data-bs-target="#about" >
                     about</button>
                     
-                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#contact" >
+                    <button type="button" class="btn   " data-bs-toggle="modal" data-bs-target="#contact" >
                       contact</button>
                     </div>
                     
@@ -155,10 +155,16 @@ export default {
     right:0;
     height: 100vh;
   }
+  .btn{
+    background-color: var(--sixty);
+    box-shadow:  2px 2px 6px #bebebe,
+             -2px -2px 6px var(--acc);
+  }
 
   .fixedButton>*{
     margin:var(--ss);
     background-color: var(--glass);
+    border-block-color: var(--mute);
   }
   .modal-content{
     background-color: var(--mute);

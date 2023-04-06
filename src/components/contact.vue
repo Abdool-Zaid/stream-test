@@ -50,6 +50,8 @@ form {
   align-content: stretch;
   align-items: center;
   background-color: var(--sixty);
+    box-shadow:  2px 2px 6px #bebebe,
+             -2px -2px 6px var(--acc);
 }
 form >*{
   margin: var(--ss);
@@ -62,7 +64,6 @@ form >*{
 #contactButtons{
   width: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   background-color:var(--mute);

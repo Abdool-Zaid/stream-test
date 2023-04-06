@@ -8,6 +8,7 @@
     margin:0;
     box-sizing: border-box;
     word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
 
   }
   ::-webkit-scrollbar {

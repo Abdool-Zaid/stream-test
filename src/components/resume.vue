@@ -1,7 +1,7 @@
 <template>
   <h1>Work experience</h1>
   <div id="resumeBody">
-    <div class="jobCard" v-for="job in resume" :key="job">
+    <div class="jobCard" v-for="job in resume.slice().reverse()" :key="job">
       <h1>{{ job.name }}</h1>
       <h4>{{ job.jobTitle }}</h4>
       <p>{{ job.desc }}</p>
