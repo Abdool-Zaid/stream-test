@@ -13,7 +13,7 @@ import { CompositionShader} from './shaders/CompositionShader.js'
 import { BASE_LAYER, BLOOM_LAYER, BLOOM_PARAMS, OVERLAY_LAYER } from "./config/renderConfig.js";
 
 // Rendering
-import { MapControls } from 'three/addons/controls/OrbitControls.js'
+import { MapControls } from 'three/addons/controls/MapControls.js';
 
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -162,6 +162,7 @@ function renderPipeline() {
 initThree()
 let axes = new THREE.AxesHelper(5.0)
 scene.add(axes)
+axes.rotation.z+=0.03
 
 let galaxy = new Galaxy(scene)
 
