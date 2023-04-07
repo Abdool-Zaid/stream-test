@@ -156,9 +156,10 @@ export default {
     height: 100vh;
   }
   .btn{
-    background-color: var(--sixty);
-    box-shadow:  2px 2px 6px #bebebe,
+    background-color: #bebebe;
+    box-shadow:  2px 2px 6px var(--sixty),
              -2px -2px 6px var(--acc);
+             color:#bebebe ;
   }
 
   .fixedButton>*{

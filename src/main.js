@@ -37,7 +37,7 @@ function initThree() {
     camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 5000000 );
     camera.position.set(0, 500, 500);
     camera.up.set(0, 0, 1);
-    camera.lookAt(0, 0, 0);
+    camera.lookAt(0, 0, 1);
 
     // map orbit
     orbit = new MapControls(camera, canvas)
@@ -47,6 +47,7 @@ function initThree() {
     orbit.minDistance = 1;
     orbit.maxDistance = 16384;
     orbit.maxPolarAngle = (Math.PI / 2) - (Math.PI / 360)
+    
 
     initRenderPipeline()
 
@@ -133,7 +134,6 @@ async function render() {
     const canvas = renderer.domElement;
     camera.aspect = canvas.clientWidth / canvas.clientHeight;
     camera.updateProjectionMatrix();
-
     galaxy.updateScale(camera)
 
     // Run each pass of the render pipeline
@@ -162,8 +162,7 @@ function renderPipeline() {
 initThree()
 let axes = new THREE.AxesHelper(5.0)
 scene.add(axes)
-axes.rotation.z+=0.03
+
 
 let galaxy = new Galaxy(scene)
-
 requestAnimationFrame(render)
