@@ -38,6 +38,7 @@ function initThree() {
     camera.position.set(0, 500, 500);
     camera.up.set(0, 0, 1);
     camera.lookAt(0, 0, 1);
+    console.log(camera)
 
     // map orbit
     orbit = new MapControls(camera, canvas)
@@ -118,8 +119,15 @@ function resizeRendererToDisplaySize(renderer) {
     }
     return needResize;
 }
-
 async function render() {
+    for(let i=0;i<25;i++){
+        
+        let rand =scene.children[Math.floor((scene.children.length-1)*Math.random())]
+        // rand.material.opacity=Math.random() 
+        rand.visible= !rand.visible
+
+    }
+
 
     orbit.update()
 

@@ -9,7 +9,7 @@
           title="Embedded post"
         ></iframe>
       </div>
-      <a href="https://drive.google.com/file/d/1Uom_7kXHY3d-LaCHDs4SabgZFO0prL4U/view?usp=sharing" target="_blank">
+      <a href="https://drive.google.com/file/d/1fBUZxtE90kjJAWmZbIKe5h8DYIVLGYtr/view?usp=sharing" target="_blank">
 
         <button @click="downLoadCV()" class="btn btn-primary">
         view Resume
