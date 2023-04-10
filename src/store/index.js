@@ -145,7 +145,7 @@ export default createStore({
         development: [
           { skill: "JAVA", level: 34, colour: "indigo" },
         ],
-        duration: "2.5 months",
+        duration: "3 months",
         link: "https://www.corticalsystems.com/",
       },
     ],
