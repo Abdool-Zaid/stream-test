@@ -115,7 +115,7 @@ export default createStore({
       {
         name: "Oude Molen",
         jobTitle: " Teacher's Assitant",
-        desc: `here I my job included manageing all printing material textbooks and supervising the workshops and the school audio equipment`,
+        desc: `here I my job included managing all printing material textbooks and supervising the workshops and the school audio equipment`,
         development: [
           { skill: "time Management", level: 89, colour: "indigo" },
           { skill: "Communication", level: 82, colour: "violet" },
