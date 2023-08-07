@@ -2,12 +2,7 @@
   <div>
     <div id="aboutBody">
       <div id="aboutlanding">
-        <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6983873663385128961"
-          frameborder="0"
-          allowfullscreen=""
-          title="Embedded post"
-        ></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7092149759259389953" height="undefined" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
       </div>
       <a href="https://drive.google.com/file/d/1fBUZxtE90kjJAWmZbIKe5h8DYIVLGYtr/view?usp=sharing" target="_blank">
 
